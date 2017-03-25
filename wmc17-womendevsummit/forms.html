@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Women Dev Summit - Oficina de Bootstrap</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="col-md-12 text-center">
+            <h1>Formulários</h1>
+            <hr>
+        </div>
+        <div>
+            <form>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" class="form-control" id="email">
+                </div>
+                <div class="form-group">
+                    <label for="pwd">Senha:</label>
+                    <input type="password" class="form-control" id="pwd">
+                </div>
+                <div class="checkbox">
+                    <label><input type="checkbox">Lembre-me</label>
+                </div>
+                <button type="submit" class="btn btn-default">Enviar</button>
+            </form>
+            <hr>
+        </div>
+        <div>
+            <form class="form-inline">
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" class="form-control" id="email">
+                </div>
+                <div class="form-group">
+                    <label for="pwd">Senha:</label>
+                    <input type="password" class="form-control" id="pwd">
+                </div>
+                <div class="checkbox">
+                    <label><input type="checkbox">Lembre-me</label>
+                </div>
+                <button type="submit" class="btn btn-default">Enviar</button>
+            </form>
+            <hr>
+        </div>
+        <div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label for="comment">Comente:</label>
+                        <textarea class="form-control" rows="5" id="comment"></textarea>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="checkbox">
+                        <label><input type="checkbox" value="">Opção 1</label>
+                    </div>
+                    <div class="checkbox">
+                        <label><input type="checkbox" value="">Opção 2</label>
+                    </div>
+                    <div class="checkbox disabled">
+                        <label><input type="checkbox" value="" disabled>Opção 3</label>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <label class="checkbox-inline"><input type="checkbox" value="">Opção 1</label>
+                    <label class="checkbox-inline"><input type="checkbox" value="">Opção 2</label>
+                    <label class="checkbox-inline"><input type="checkbox" value="">Opção 3</label>
+                </div>
+
+            </div>
+            <div class="row">
+                <hr>
+                <div class="col-md-4">
+                    <div class="radio">
+                        <label><input type="radio" name="optradio">Opção 1</label>
+                    </div>
+                    <div class="radio">
+                        <label><input type="radio" name="optradio">Opção 2</label>
+                    </div>
+                    <div class="radio disabled">
+                        <label><input type="radio" name="optradio" disabled>Opção 3</label>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label for="sel1">Selecione:</label>
+                        <select class="form-control" id="sel1">
+    <option>1</option>
+    <option>2</option>
+    <option>3</option>
+    <option>4</option>
+  </select>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <form>
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                            <input id="email" type="text" class="form-control" name="email" placeholder="Email">
+                        </div>
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                            <input id="password" type="password" class="form-control" name="password" placeholder="Password">
+                        </div>
+                        <div class="input-group">
+                            <span class="input-group-addon">Text</span>
+                            <input id="msg" type="text" class="form-control" name="msg" placeholder="Additional Info">
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="row">
+                <hr>
+                <div class="col-md-12">
+                    <form class="form-horizontal">
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">Focused</label>
+                            <div class="col-sm-10">
+                                <input class="form-control" id="focusedInput" type="text" value="Click to focus">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputPassword" class="col-sm-2 control-label">Disabled</label>
+                            <div class="col-sm-10">
+                                <input class="form-control" id="disabledInput" type="text" disabled>
+                            </div>
+                        </div>
+                        <fieldset disabled>
+                            <div class="form-group">
+                                <label for="disabledTextInput" class="col-sm-2 control-label">Fieldset disabled</label>
+                                <div class="col-sm-10">
+                                    <input type="text" id="disabledTextInput" class="form-control">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="disabledSelect" class="col-sm-2 control-label"></label>
+                                <div class="col-sm-10">
+                                    <select id="disabledSelect" class="form-control">
+          <option>Disabled select</option>
+        </select>
+                                </div>
+                            </div>
+                        </fieldset>
+                        <div class="form-group has-success has-feedback">
+                            <label class="col-sm-2 control-label" for="inputSuccess">
+    Input with success and icon</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="inputSuccess">
+                                <span class="glyphicon glyphicon-ok form-control-feedback"></span>
+                            </div>
+                        </div>
+                        <div class="form-group has-warning has-feedback">
+                            <label class="col-sm-2 control-label" for="inputWarning">
+    Input with warning and icon</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="inputWarning">
+                                <span class="glyphicon glyphicon-warning-sign form-control-feedback"></span>
+                            </div>
+                        </div>
+                        <div class="form-group has-error has-feedback">
+                            <label class="col-sm-2 control-label" for="inputError">
+    Input with error and icon</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="inputError">
+                                <span class="glyphicon glyphicon-remove form-control-feedback"></span>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>
